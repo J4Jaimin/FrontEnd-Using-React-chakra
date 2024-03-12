@@ -9,6 +9,7 @@ const ColorModeSwitcher = props => {
   return (
     <IconButton
       pos={'fixed'}
+      zIndex={'overlay'}
       top={'4'}
       right={'4'}
       onClick={toggleColorMode}

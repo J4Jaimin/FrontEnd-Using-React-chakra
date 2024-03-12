@@ -15,7 +15,6 @@ const headingOptions = {
     transform: 'translate(-50%, -50%)',
     textTransform: 'uppercase',
     p: '4',
-    size: '3xl',
 }
 
 const Home = () => {
@@ -45,21 +44,21 @@ const Home = () => {
 
 const MyCarousel = () => (
     <Carousel autoPlay infiniteLoop interval={1000} showStatus={false} showThumbs={false} showArrows={false}>
-        <Box w={'full'} h={'100vh'}>
+        <Box w={'full'} h={['100vh']}>
             <Image src={img1} />
-            <Heading bgColor={'blackAlpha.600'} color={'white'} {...headingOptions}>Watch The Future</Heading>
+            <Heading bgColor={'blackAlpha.600'} color={'white'} {...headingOptions} size={['1xl', '3xl']}>Watch The Future</Heading>
         </Box>
         <Box w={'full'} h={'100vh'}>
             <Image src={img2} />
-            <Heading bgColor={'whiteAlpha.800'} color={'black'} {...headingOptions}>Future is Gaming</Heading>
+            <Heading bgColor={'whiteAlpha.800'} color={'black'} {...headingOptions} size={['1xl', '3xl']}>Future is Gaming</Heading>
         </Box>
         <Box w={'full'} h={'100vh'}>
             <Image src={img3} />
-            <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions}>Gaming on Console</Heading>
+            <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions} size={['1xl', '3xl']}>Gaming on Console</Heading>
         </Box>
         <Box w={'full'} h={'100vh'}>
             <Image src={img4} />
-            <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions}>Night Life is Cool</Heading>
+            <Heading bgColor={'whiteAlpha.600'} color={'black'} {...headingOptions} size={['1xl', '3xl']}>Night Life is Cool</Heading>
         </Box>
     </Carousel>
 )
